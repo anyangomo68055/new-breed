@@ -2391,7 +2391,7 @@ function Contact({ darkMode }) {
       });
 
       if (response.ok) {
-        const data = await response.json();
+        // const data = await response.json();
         setSubmitStatus("Message sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
         setTimeout(() => setSubmitStatus(""), 3000);
